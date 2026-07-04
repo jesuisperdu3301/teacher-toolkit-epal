@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Toolkit ΕΠΑΛ</title>
+  <meta name="description" content="Offline εκπαιδευτικό toolkit για ΕΠΑΛ: Impostor, Flashcards, Quiz, Random Wheel, Search και lesson packs." />
+  <meta name="theme-color" content="#6759ff" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" aria-label="Κύρια πλοήγηση">
+      <button class="brand" data-route="home" aria-label="Αρχική">
+        <span class="brand-mark">🎓</span>
+        <span><strong>Teacher Toolkit</strong><small>ΕΠΑΛ Health Sciences</small></span>
+      </button>
+      <nav id="nav" class="nav"></nav>
+      <section class="side-card">
+        <div class="muted">Auto-save</div>
+        <strong id="saveStatus">Ενεργό</strong>
+        <p>Οι βάσεις, σημειώσεις και ρυθμίσεις αποθηκεύονται τοπικά στη συσκευή.</p>
+      </section>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Teacher Toolkit ΕΠΑΛ</h1>
+          <p id="pageSubtitle">Φόρτωση...</p>
+        </div>
+        <div class="top-actions">
+          <button id="presentationBtn" class="ghost">🖥 Full Screen</button>
+          <button id="themeBtn" class="ghost">🌙</button>
+        </div>
+      </header>
+      <section id="meta" class="meta-row"></section>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="importFile" type="file" accept=".json,.epack,application/json" hidden />
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
