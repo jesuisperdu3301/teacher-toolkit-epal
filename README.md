@@ -2,8 +2,6 @@
 
 > **An offline-first Progressive Web App (PWA) designed to transform classroom terminology into interactive learning experiences for Greek EPAL Health Sciences education.**
 
-*(Add a screenshot banner of the Home screen here.)*
-
 ---
 
 # 🌟 Overview
